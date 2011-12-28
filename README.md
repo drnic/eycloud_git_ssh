@@ -1,5 +1,7 @@
 # Generate git command with specific identity
 
+STATUS: Not yet tested; only an idea drafted on a train.
+
 By default, `git` uses the local environments `ssh` for its `git@...` remote system access. If you want to override the credentials/identity being used then it requires you to setup a bunch of intermediate files.
 
 This recipe generates a wrapper `git` command that uses an alternate IdentityFile.
