@@ -6,7 +6,7 @@ This recipe generates a wrapper `git` command that uses an alternate IdentityFil
 
 ## Usage
 
-    ey-recipes clone git://github.com/drnic/eycloud_git_ssh.git git_ssh
+    ey-recipes clone git://github.com/drnic/eycloud_git_ssh.git -n git_ssh
 
 ## Generated files
 
