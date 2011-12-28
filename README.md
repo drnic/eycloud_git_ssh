@@ -16,8 +16,12 @@ Assuming the owner user is 'deploy', the following files are created:
     /home/deploy/bin/git-ssh
     /home/deploy/config/git-ssh-config
 
+It assumes there is a private key pair ~/.ssh/git-key & ~/.ssh/git-key.pub
+
 If you set `git_ssh_name` (defaults to "git") to "mygit", the following files are created:
 
     /home/deploy/bin/mygit
     /home/deploy/bin/mygit-ssh
     /home/deploy/config/mygit-ssh-config
+
+It assumes there is a private key pair ~/.ssh/git-key & ~/.ssh/git-key.pub

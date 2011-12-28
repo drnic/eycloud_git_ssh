@@ -1,5 +1,5 @@
-username       = node[:owner_name]
-git_ssh_prefix = node[:git_ssh_prefix]
+username     = node[:owner_name]
+git_ssh_name = node[:git_ssh_name]
 
 directory "/home/#{username}/config" do
   owner owner_name
@@ -22,7 +22,7 @@ template "/home/#{username}/config/#{git_ssh_name}-ssh-config" do
   owner owner_name
   source "ssh-config.erb"
   variables({
-    :app_name => app
+    :git_ssh_name => git_ssh_name
   })
 end
 
